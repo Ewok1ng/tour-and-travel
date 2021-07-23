@@ -1,0 +1,30 @@
+.trending {
+  margin-top: 290px;
+  margin-bottom: 270px;
+  &__row {
+    position: relative;
+    margin-bottom: 56px;
+
+    &::before {
+      content: url('../../images/svg-elems/4.svg');
+      position: absolute;
+      top: -57px;
+      left: 455px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:after {
+      content: url('../../images/svg-elems/5.svg');
+      position: absolute;
+      bottom: -79px;
+      right: 409px;
+    }
+  }
+}

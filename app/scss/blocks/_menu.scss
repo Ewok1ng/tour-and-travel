@@ -1,0 +1,29 @@
+.menu {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    margin-right: 34px;
+
+    @extend %Inter-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray-color;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $title-color;
+    }
+
+    &--active {
+      @extend %Inter-medium;
+      color: $title-color;
+    }
+  }
+}

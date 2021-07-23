@@ -1,0 +1,40 @@
+.guides {
+  margin-top: 232px;
+  &__info {
+    position: relative;
+    margin-top: 158px;
+    margin-left: 50px;
+
+    &::before {
+      content: url('../../images/svg-elems/5.svg');
+      position: absolute;
+      top: -68px;
+      left: 45px;
+    }
+
+    &::after {
+      content: url('../../images/svg-elems/3.svg');
+      position: absolute;
+      right: 121px;
+      bottom: 2px;
+      transform: rotate(19deg);
+    }
+  }
+
+  &__title {
+    width: 410px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 450px;
+    margin-bottom: 38px;
+  }
+
+  &__img {
+    width: 599px;
+    height: 542px;
+
+    transform: translate(-30px, 5px);
+  }
+}

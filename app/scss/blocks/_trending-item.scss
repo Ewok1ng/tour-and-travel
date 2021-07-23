@@ -1,0 +1,51 @@
+.trending-item {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.03, 1.03);
+  }
+
+  &__img {
+    display: block;
+    width: 260px;
+    height: 230px;
+    object-fit: cover;
+    object-position: top center;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  &__info {
+    max-width: 260px;
+  }
+
+  &__title {
+    margin-top: 15px;
+    @extend %Inter-bold;
+    font-size: 19px;
+    line-height: 30px;
+    color: $black-color;
+  }
+
+  &__text {
+    margin-top: 10px;
+    @extend %Inter-regular;
+    font-size: 15px;
+    line-height: 26px;
+    color: $text-color;
+  }
+
+  &__link {
+    margin-top: 25px;
+    display: inline-block;
+
+    @extend %Inter-semibold;
+    font-size: 15px;
+    line-height: 28px;
+    color: $orange-color;
+
+    &:hover {
+      text-decoration: underline;
+      color: darken($orange-color, 5%);
+    }
+  }
+}

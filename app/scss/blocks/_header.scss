@@ -1,0 +1,28 @@
+.header {
+  margin-top: 42px;
+  height: 41px;
+
+  &__menu {
+    margin-right: 35px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 41px;
+    height: 41px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+}

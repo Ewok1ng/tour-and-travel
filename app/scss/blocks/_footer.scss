@@ -1,0 +1,82 @@
+.footer {
+  padding-top: 78px;
+
+  background-color: $footer-bg-color;
+  &__content {
+    padding-bottom: 71px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid $footer-color;
+  }
+
+  &__logo-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__description {
+    margin-top: 26px;
+    max-width: 300px;
+
+    @extend %Mulish-light;
+    font-size: 18px;
+    line-height: 28px;
+    color: $footer-color;
+  }
+
+  &__copyrights {
+    margin-top: 55px;
+    @extend %Mulish-light;
+    font-size: 17px;
+    line-height: 28px;
+    color: $footer-color;
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 23px;
+
+    @extend %Mulish-bold;
+    font-size: 19px;
+    line-height: 25px;
+    color: $black-color;
+  }
+
+  &__list-item {
+    margin-bottom: 13px;
+
+    @extend %Mulish-light;
+    font-size: 18px;
+    line-height: 25px;
+    color: $footer-color;
+
+    &:hover {
+      color: darken($footer-color, 85%);
+    }
+  }
+
+  &__social {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social-list {
+    margin-left: -60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__social-item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

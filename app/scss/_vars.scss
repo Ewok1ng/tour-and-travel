@@ -1,0 +1,60 @@
+$black-color: #000;
+$title-color: #202336;
+$featured-title-color: #042521;
+$orange-color: #fb8f1d;
+$white-color: #fff;
+$gray-color: #b8becd;
+$text-color: #7d7987;
+$input-color: #4a4c53;
+$featured-subtitle-color: #80918e;
+$input-border-color: #afb0b9;
+$footer-color: #848484;
+$footer-bg-color: #f9f9fb;
+
+%Inter-regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%Inter-medium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%Inter-semibold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%Inter-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%Mulish-light {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%Mulish-regular {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%Mulish-bold {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%Playfair-bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+img {
+  display: block;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-title {
+  @extend %Playfair-bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: $title-color;
+}
+
+.section-title {
+  @extend %Playfair-bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: $black-color;
+}
+
+.section-text {
+  @extend %Mulish-light;
+  font-size: 17px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.view-all {
+  position: relative;
+  padding-right: 14px;
+
+  @extend %Inter-semibold;
+  font-size: 17px;
+  line-height: 23px;
+  color: $orange-color;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    color: darken($orange-color, 5%);
+    &::after {
+      transform: translateX(5px);
+    }
+  }
+
+  &::after {
+    content: url('../images/icons/view-all-arrow.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

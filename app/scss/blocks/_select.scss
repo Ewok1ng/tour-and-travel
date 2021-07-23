@@ -1,0 +1,36 @@
+.select {
+  width: 220px;
+  padding: 16px 45px 16px 27px;
+  margin-right: -3px;
+
+  appearance: none;
+  outline: none;
+
+  @extend %Inter-regular;
+  font-size: 15px;
+  line-height: 18px;
+  color: $input-color;
+
+  border: 0.8px solid $input-border-color;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &::after {
+      content: url('../../images/icons/slect-arrow.svg');
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      top: 16px;
+      right: 27px;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.button {
+  width: 132px;
+  margin-right: 18px;
+  padding: 12px 0;
+
+  @extend %Inter-medium;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  border: 1px solid $orange-color;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--form {
+    width: 180px;
+    padding: 15px 0;
+  }
+
+  &--large {
+    width: 164px;
+    padding: 13px 0;
+  }
+
+  &--outlined {
+    color: $orange-color;
+    background-color: $white-color;
+
+    &:hover {
+      background-color: darken($white-color, 2%);
+    }
+  }
+
+  &--primary {
+    color: $white-color;
+    background-color: $orange-color;
+
+    &:hover {
+      background-color: darken($orange-color, 5%);
+    }
+  }
+}

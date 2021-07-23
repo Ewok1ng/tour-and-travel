@@ -1,0 +1,38 @@
+.featured {
+  margin-top: 296px;
+
+  &__row {
+    position: relative;
+    margin-bottom: 56px;
+
+    &::after {
+      content: url('../../images/svg-elems/5.svg');
+      position: absolute;
+      top: -30px;
+      right: 221px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    padding: 0 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::before {
+      content: url('../../images/svg-elems/4.svg');
+      position: absolute;
+      bottom: 112px;
+      left: -69px;
+    }
+
+    &::after {
+      content: url('../../images/svg-elems/5.svg');
+      position: absolute;
+      bottom: -68px;
+      right: 647px;
+    }
+  }
+}

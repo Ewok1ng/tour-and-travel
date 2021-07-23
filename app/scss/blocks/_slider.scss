@@ -1,0 +1,98 @@
+.slider {
+  position: relative;
+  &__item {
+    padding-left: 51px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex: 1 0 50%;
+  }
+
+  &__info {
+    width: 450px;
+  }
+
+  &__rating {
+    margin-top: 89px;
+    margin-bottom: 30px;
+  }
+
+  &__review {
+    margin-bottom: 51px;
+
+    @extend %Mulish-regular;
+    font-size: 24px;
+    line-height: 36px;
+    color: $black-color;
+  }
+
+  &__author {
+    margin-bottom: 9px;
+    @extend %Inter-bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: $black-color;
+  }
+
+  &__author-job {
+    margin-bottom: 9px;
+    @extend %Inter-regular;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba($black-color, 0.85);
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    &::before {
+      content: url('../../images/svg-elems/7.svg');
+      position: absolute;
+      top: -12px;
+      right: 133px;
+      z-index: -1;
+    }
+
+    &:after {
+      content: url('../../images/svg-elems/6.svg');
+      position: absolute;
+      bottom: -23px;
+      left: 35px;
+    }
+  }
+
+  &__img {
+    width: 384px;
+    height: 491px;
+
+    border-radius: 14px;
+
+    transform: translate(50px, 4px);
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: -4px;
+    right: 151px;
+
+    width: 132px;
+    height: 60px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-color: $white-color;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 14px;
+  }
+
+  &__btn {
+    stroke: red;
+    &--prev {
+      margin-right: 22px;
+    }
+  }
+}

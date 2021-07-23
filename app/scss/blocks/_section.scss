@@ -1,0 +1,18 @@
+.section {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex: 1 0 50%;
+  }
+
+  &__row {
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

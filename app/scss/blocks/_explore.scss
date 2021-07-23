@@ -1,0 +1,71 @@
+.explore {
+  margin-top: 80px;
+  &__title {
+    position: relative;
+
+    margin-top: 37px;
+    max-width: 356px;
+
+    &::before {
+      content: url('../../images/svg-elems/3.svg');
+      position: absolute;
+      top: -27px;
+      right: -132px;
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    &::before {
+      content: url('../../images/svg-elems/2.svg');
+      position: absolute;
+      top: 59px;
+      left: -110px;
+    }
+
+    &::after {
+      content: url('../../images/svg-elems/1.svg');
+      position: absolute;
+      bottom: -33px;
+      right: 48px;
+    }
+  }
+
+  &__form-title {
+    position: relative;
+
+    margin: 75px 0px 71px 2px;
+
+    @extend %Inter-semibold;
+    font-size: 22px;
+    line-height: 27px;
+    color: $title-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      bottom: -22px;
+      width: 32px;
+      height: 2px;
+      border-radius: 4px;
+      background-color: $title-color;
+    }
+  }
+
+  &__form-group {
+    margin-bottom: 51px;
+    max-width: 475px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+
+  &__img {
+    width: 687px;
+    height: 654px;
+    transform: translate(8px, 5px);
+  }
+}
